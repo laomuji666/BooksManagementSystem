@@ -1,0 +1,128 @@
+    //增加一个管理员
+    @Insert("insert into account_admin(name,password) values(#{name},#{password});")
+    int InsertAdmin(@Param("name")String name,@Param("password") String password);
+    //获得最新的账号
+    @Select("select max(admin_number) from account_admin")
+    int SelectMaxAdminNumber();
+    
+    //增加一个普通用户
+    @Insert("insert into account_user(name,password,department) values(#{name},#{password},#{department});")
+    int InsertUser(@Param("name")String name,@Param("password") String password,@Param("department") String department);
+    //获得最新的账号
+    @Select("select max(user_number) from account_user")
+    int SelectMaxUserNumber();
+
+    //查找管理员账号密码
+    @Select("select *from account_admin where " +
+            "admin_number = #{admin_number} and " +
+            "password = #{password} and available = 1;")
+    Account_Admin SelectAdmin(@Param("admin_number") int admin_number, @Param("password") String password);
+
+    //查找普通用户账号密码
+    @Select("select *from account_user where " +
+            "user_number = #{user_number} and " +
+            "password = #{password} and available = 1;")
+    Account_User SelectUser(@Param("user_number") int account_user, @Param("password") String password);
+
+    //更新用户信息
+    @Update("update account_user set " +
+            "name = #{name}," +
+            "password = #{password}," +
+            "department = #{department}," +
+            "available = #{available}," +
+            "profile_photo = #{profile_photo} "+
+            "where user_number = #{user_number};")
+    int UpdateUserFromAdmin(@Param("user_number")Integer user_number,@Param("name")String name,
+                      @Param("password")String password,@Param("department")String department,
+                      @Param("available")Integer available,@Param("profile_photo")String profile_photo);
+
+
+
+    //修改管理员信息
+    @Update("update account_admin set " +
+            "name = #{name},"+
+            "password = #{password} ," +
+            "profile_photo = #{profile_photo} " +
+            "where admin_number = #{admin_number};")
+    int UpdateAdmin(@Param("admin_number")int admin_number,@Param("name")String name,@Param("password")String password,@Param("profile_photo")String profile_photo);
+
+    //修改普通用户信息
+    @Update("update account_user set " +
+            "name = #{name},"+
+            "password = #{password} ," +
+            "profile_photo = #{profile_photo} " +
+            "where user_number =#{user_number};")
+    int UpdateUser(@Param("user_number")int user_number,@Param("name")String name,@Param("password")String password,@Param("profile_photo")String profile_photo);
+
+    //获取所有管理员账号信息,仅用于调试
+    @Select("select *from account_admin;")
+    Account_Admin[] SelectAllAdmin();
+
+    //获取所有普通用户账号信息,仅用于调试
+    @Select("select *from account_user;")
+    Account_User[] SelectAllUser();
+
+    //获得所有书籍信息
+    @Select("select * from book;")
+    Book[] SelectAllBook();
+    //更新书籍信息
+    @Update("update book set " +
+            "title = #{title}," +
+            "author = #{author}," +
+            "type = #{type}," +
+            "source_num = #{source_num}," +
+            "available = #{available}," +
+            "reason = #{reason}," +
+            "add_time = #{add_time} " +
+            "where book_id = #{book_id}")
+    int UpdateBook(@Param("book_id")Integer book_id,@Param("title")String title,
+                   @Param("author")String author,@Param("type")String type ,
+                   @Param("source_num")Integer source_num,@Param("available")Integer available,
+                   @Param("reason")String reason,@Param("add_time")String add_time);
+    //获取所有可被借阅的书籍
+    @Select("select *from book where available=1;")
+    Book[] SelectAllAvailableBook();
+
+    //录入书籍
+    @Insert("insert into book(title,author,source_num) values(#{title},#{author},#{source_num});")
+    int InsertBook(@Param("title")String title,@Param("author")String author, @Param("source_num") int source_num);
+
+    //获取所有借阅信息
+    @Select("select *from book_borrow;")
+    Book_Borrow[] SelectAllBorrow();
+
+    //获取我的所有借阅信息
+    @Select("select book.book_id,book.title,book.author,br.* from book,(select * from book_borrow where" +
+            " borrow_user = #{borrow_user}) as br where " +
+            "book.book_id=br.borrow_book " +
+            "order by borrow_id desc;")
+    Book_Borrow_My[] SelectMyBorrow(@Param("borrow_user")Integer borrow_user);
+
+    //更新借阅信息
+    @Update("update book_borrow set " +
+            "borrow_book = #{borrow_book}," +
+            "borrow_admin = #{borrow_admin}," +
+            "borrow_user = #{borrow_user}," +
+            "borrow_time = #{borrow_time}," +
+            "return_time = #{return_time}," +
+            "available = #{available} " +
+            "where borrow_id = #{borrow_id};")
+    int UpdateBorrow(@Param("borrow_id")Integer borrow_id,@Param("borrow_book")Integer borrow_book,
+                   @Param("borrow_admin")Integer borrow_admin,@Param("borrow_user")Integer borrow_user ,
+                   @Param("borrow_time")String borrow_time,@Param("return_time")String return_time,
+                   @Param("available")Integer available);
+
+    //借书步骤1借书
+    @Update("update book set available = 2 where book_id = #{book_id} and available=1;")
+    int BorrowBookUpdate(@Param("book_id") int book_id);
+    //借书步骤2将借阅信息保存
+    //insert into book_borrow(borrow_book,borrow_admin,borrow_user) values(3,10000,20210001);
+    @Insert("insert into book_borrow(borrow_book,borrow_admin,borrow_user) values(#{borrow_book},#{borrow_admin},#{borrow_user});")
+    int BorrowBookInsert(@Param("borrow_book") int borrow_book,@Param("borrow_admin") int borrow_admin,@Param("borrow_user") int borrow_user);
+
+    //还书步骤1还书
+    @Update("update book set available = 1 where book_id = #{book_id};")
+    int ReturnBookUpdateBook(@Param("book_id") int book_id);
+    //还书步骤2更新借阅信息
+    @Update("update book_borrow set available = 0,return_time=now() where borrow_id = #{borrow_id};")
+    int ReturnBookUpdateBorrow(@Param("borrow_id") int borrow_id);

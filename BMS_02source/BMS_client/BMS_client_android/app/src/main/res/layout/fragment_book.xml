@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_book"
+    tools:context=".account.user.BookFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/fragment_book_search_view"
+        app:queryHint="搜索书名或分类或书籍信息"
+        android:background="@drawable/edit_round"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <include
+        android:id="@+id/include"
+        layout="@layout/item_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_book_search_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_book_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:listitem="@layout/item_book" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

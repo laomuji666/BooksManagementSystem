@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_info">
+
+    <fragment
+        android:id="@+id/navigation_borrow"
+        android:name="com.lmj.bms.account.user.BorrowFragment"
+        tools:layout="@layout/fragment_borrow" />
+    <fragment
+        android:id="@+id/navigation_book"
+        android:name="com.lmj.bms.account.user.BookFragment"
+        tools:layout="@layout/fragment_book" />
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.lmj.bms.account.InfoFragment"
+        tools:layout="@layout/fragment_info" />
+
+</navigation>

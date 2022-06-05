@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_admin_info">
+
+    <fragment
+        android:id="@+id/navigation_admin_borrow_return"
+        android:name="com.lmj.bms.account.admin.AdminBorrowFragment"
+        tools:layout="@layout/fragment_admin_borrow" />
+    <fragment
+        android:id="@+id/navigation_admin_info"
+        android:name="com.lmj.bms.account.InfoFragment"
+        tools:layout="@layout/fragment_info" />
+
+</navigation>

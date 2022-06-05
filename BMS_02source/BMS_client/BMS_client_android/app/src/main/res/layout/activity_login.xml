@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMS图书管理"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/activity_login_edit_text_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/login_icon_number"
+            android:hint="账号"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/activity_login_edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/login_icon_password_hide"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/activity_login_edit_text_code"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/login_icon_code"
+                android:inputType="textVisiblePassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAlignment="center"
+                android:hint="验证码"/>
+            <ImageView
+                android:id="@+id/activity_login_image_view_code"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:background="#000"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/activity_login_btn_login"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <CheckBox
+            android:id="@+id/activity_login_check_box_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="记住密码" />
+
+        <CheckBox
+            android:id="@+id/activity_login_check_box_auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="自动登陆" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp">
+        <TextView
+            android:id="@+id/activity_login_text_view_type_change"
+            android:text="切换用户类型"
+            android:textSize="13sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="#BEBEBE"/>
+        <TextView
+            android:id="@+id/activity_login_text_view_type_show"
+            android:text="用户登陆"
+            android:textSize="13sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="#BEBEBE"/>
+        <TextView
+            android:id="@+id/activity_login_text_view_register"
+            android:text="新用户注册"
+            android:textSize="13sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

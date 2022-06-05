@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_add_book.xml" value="0.18489583333333334" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_admin.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_login.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_qrcode.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_register.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_user.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/capture.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/fragment_admin_borrow.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/fragment_book.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/fragment_borrow.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/fragment_info.xml" value="0.22739018087855298" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/item_book.xml" value="0.25" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/item_borrow.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/item_user_info.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/menu/admin_bottom_nav_menu.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/61436/Desktop/project/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/menu/user_bottom_nav_menu.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/drawable/button_login.xml" value="0.2953703703703704" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/drawable/edit_round.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/drawable/image_round.xml" value="0.3764102564102564" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/drawable/selector_capture_back.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/activity_admin.xml" value="0.3161231884057971" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/activity_login.xml" value="0.32518115942028986" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/activity_qrcode.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/activity_user.xml" value="0.22" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/capture.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/fragment_admin_borrow.xml" value="0.2930253623188406" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/fragment_blank.xml" value="0.253125" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/fragment_book.xml" value="0.253125" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/fragment_bookl.xml" value="0.2046875" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/fragment_borrow.xml" value="0.25" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/fragment_info.xml" value="0.2046875" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/item_book.xml" value="0.39148073022312374" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/item_borrow.xml" value="0.38333333333333336" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/layout/item_user_info.xml" value="0.20365535248041775" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/menu/admin_bottom_nav_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2046875" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/menu/user_bottom_nav_menu.xml" value="0.2046875" />
+        <entry key="..\:/Users/laomuji/Desktop/BMS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2953703703703704" />
+        <entry key="..\:/Users/laomuji/Desktop/BooksManagementSystem/BMS_02source/BMS_client/BMS_client_android/app/src/main/res/layout/item_borrow.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/laomuji/Desktop/BooksManagementSystem/BMS_03source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_admin.xml" value="0.16304347826086957" />
+        <entry key="..\:/Users/laomuji/Desktop/BooksManagementSystem/BMS_03source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_login.xml" value="0.2826086956521739" />
+        <entry key="..\:/Users/laomuji/Desktop/BooksManagementSystem/BMS_03source/BMS_client/BMS_client_android/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/laomuji/Desktop/BooksManagementSystem/BMS_03source/BMS_client/BMS_client_android/app/src/main/res/layout/fragment_book.xml" value="0.17806484295845998" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

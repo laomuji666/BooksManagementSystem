@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/item_borrow_text_borrow_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="借阅号"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/item_borrow_text_book_id"
+                android:text="书籍号"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_borrow_text_title"
+                android:text="书名"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:gravity="center|bottom"
+                android:layout_width="match_parent"
+                android:layout_weight="3.2"
+                android:layout_height="0dp"/>
+            <TextView
+                android:text="书籍信息"
+                android:id="@+id/item_borrow_text_author"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center|top"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="借书时间"
+                android:id="@+id/item_borrow_text_borrow_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="10sp" />
+            <TextView
+                android:text="还书时间"
+                android:id="@+id/item_borrow_text_return_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/item_book_image_return"
+                android:src="@drawable/icon_book_return"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+</LinearLayout>
+

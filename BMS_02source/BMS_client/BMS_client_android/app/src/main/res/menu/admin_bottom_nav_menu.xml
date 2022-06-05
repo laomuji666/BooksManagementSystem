@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_admin_borrow_return"
+        android:icon="@drawable/icon_borrow_return"
+        android:title="借还" />
+
+    <item
+        android:id="@+id/navigation_admin_info"
+        android:icon="@drawable/icon_my"
+        android:title="个人信息" />
+
+</menu>

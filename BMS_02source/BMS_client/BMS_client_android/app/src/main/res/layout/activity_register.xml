@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMS用户注册"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/activity_register_edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/login_icon_number"
+            android:hint="用户姓名"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/activity_register_edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/login_icon_password_hide"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/activity_register_edit_text_department"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/register_icon_department"
+            android:hint="用户部门"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/activity_register_edit_text_code"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/edit_round"
+                android:drawableLeft="@drawable/login_icon_code"
+                android:inputType="textVisiblePassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAlignment="center"
+                android:hint="验证码"/>
+            <ImageView
+                android:id="@+id/activity_register_image_view_code"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:background="#000"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/activity_register_btn_register"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_login" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
